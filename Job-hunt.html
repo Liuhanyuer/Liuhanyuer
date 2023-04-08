@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Design Job Portal</title>
+    <link rel="stylesheet" href="app.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="job-categories">
+            <h1>AI Design Job Categories</h1>
+            <div class="category-list">
+                <div class="category">
+                    <h2>Architecture</h2>
+                    <ul>
+                        <li><a href="#" onclick="filterJobs('Architecture', 'Residential')">Residential</a></li>
+                        <li><a href="#" onclick="filterJobs('Architecture', 'Commercial')">Commercial</a></li>
+                        <li><a href="#" onclick="filterJobs('Architecture', 'Industrial')">Industrial</a></li>
+                        <li><a href="#" onclick="filterJobs('Architecture', 'Landscape')">Landscape</a></li>
+                    </ul>
+                </div>
+                <div class="category">
+                    <h2>Interior</h2>
+                    <ul>
+                        <li><a href="#" onclick="filterJobs('Interior', 'Residential')">Residential</a></li>
+                        <li><a href="#" onclick="filterJobs('Interior', 'Commercial')">Commercial</a></li>
+                        <li><a href="#" onclick="filterJobs('Interior', 'Hospitality')">Hospitality</a></li>
+                        <li><a href="#" onclick="filterJobs('Interior', 'Retail')">Retail</a></li>
+                    </ul>
+                </div>
+                <div class="category">
+                    <h2>UI/UX</h2>
+                    <ul>
+                        <li><a href="#" onclick="filterJobs('UI/UX', 'Web Design')">Web Design</a></li>
+                        <li><a href="#" onclick="filterJobs('UI/UX', 'Mobile App Design')">Mobile App Design</a></li>
+                        <li><a href="#" onclick="filterJobs('UI/UX', 'Software Design')">Software Design</a></li>
+                    </ul>
+                </div>
+                <div class="category">
+                    <h2>Other Fields</h2>
+                    <ul>
+                        <li><a href="#" onclick="filterJobs('Other Fields', 'Product Design')">Product Design</a></li>
+                        <li><a href="#" onclick="filterJobs('Other Fields', 'Furniture Design')">Furniture Design</a></li>
+                        <li><a href="#" onclick="filterJobs('Other Fields', 'Graphic Design')">Graphic Design</a></li>
+                        <li><a href="#" onclick="filterJobs('Other Fields', 'Animation & Motion Design')">Animation & Motion Design</a></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <div class="jobs-container"></div>
+    </main>
+    <footer>
+        <p>© 2023 AI Design Job Portal. All Rights Reserved.</p>
+    </footer>
+</body>
+<script src="app.js"></script>
+</html>

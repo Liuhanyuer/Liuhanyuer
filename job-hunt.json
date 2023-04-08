@@ -1,0 +1,65 @@
+{
+    "jobs": [
+      {
+        "id": 1,
+        "category": "Architecture",
+        "subcategory": "Residential",
+        "title": "AI Residential Architect",
+        "company": "ArchDesign Inc.",
+        "location": "New York, NY",
+        "type": "Full-Time",
+        "description": "We are looking for an AI Residential Architect with expertise in designing modern residential buildings."
+      },
+      {
+        "id": 2,
+        "category": "Architecture",
+        "subcategory": "Commercial",
+        "title": "AI Commercial Architect",
+        "company": "SkyHigh Solutions",
+        "location": "Los Angeles, CA",
+        "type": "Full-Time",
+        "description": "Seeking an AI Commercial Architect to join our team and work on innovative commercial building projects."
+      },
+      {
+        "id": 3,
+        "category": "Interior",
+        "subcategory": "Residential",
+        "title": "AI Interior Designer - Residential",
+        "company": "Elegant Spaces",
+        "location": "Chicago, IL",
+        "type": "Full-Time",
+        "description": "Join our team as an AI Interior Designer specializing in residential interiors and create beautiful living spaces."
+      },
+      {
+        "id": 4,
+        "category": "Interior",
+        "subcategory": "Commercial",
+        "title": "AI Interior Designer - Commercial",
+        "company": "Workplace Creations",
+        "location": "San Francisco, CA",
+        "type": "Full-Time",
+        "description": "Workplace Creations is seeking an experienced AI Interior Designer with a focus on commercial projects."
+      },
+      {
+        "id": 5,
+        "category": "UI/UX",
+        "subcategory": "Web Design",
+        "title": "AI Web UI/UX Designer",
+        "company": "WebDreams",
+        "location": "Seattle, WA",
+        "type": "Full-Time",
+        "description": "Looking for a talented AI Web UI/UX Designer to design intuitive and visually appealing websites for our clients."
+      },
+      {
+        "id": 6,
+        "category": "UI/UX",
+        "subcategory": "Mobile App Design",
+        "title": "AI Mobile App UI/UX Designer",
+        "company": "App Innovations",
+        "location": "Austin, TX",
+        "type": "Full-Time",
+        "description": "Join our team as an AI Mobile App UI/UX Designer and create engaging user interfaces for mobile applications."
+      }
+    ]
+  }
+  
