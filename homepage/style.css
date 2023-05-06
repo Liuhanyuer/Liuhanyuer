@@ -51,6 +51,25 @@ body {
   .right-header nav a:hover {
     color: #9d9d9d;
   }
+
+  /* Add this CSS rule to make the font size of the left and right headers responsive */
+.left-header, .right-header {
+    font-size: calc(0.6rem + 0.6vw); /* Change the values as needed to adjust the font size */
+  }
+  
+  /* Add media queries to set font size for specific screen sizes */
+  @media (max-width: 767px) {
+    .left-header, .right-header {
+      font-size: calc(0.6(0.8rem + 2vw)); /* Adjust the font size for smaller screens */
+    }
+  }
+  
+  @media (min-width: 1200px) {
+    .left-header, .right-header {
+      font-size: calc(0.6(1.2rem + 0.5vw)); /* Adjust the font size for larger screens */
+    }
+  }
+  
   
   .jpg {
     position: absolute;
@@ -126,7 +145,7 @@ body {
     position: absolute;
     left: 60%;
     top: 50%;
-    transform: translateY(-50%) translateX(30%);
+    transform: translateY(-50%) translateX(45%);
     z-index: 999;
   }
   
