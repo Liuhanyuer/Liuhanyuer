@@ -1,97 +1,28 @@
-body {
-  margin: 0;
-  font-family: Arial, sans-serif;
-}
-
 .container {
-  margin-top: 30px;
   display: flex;
+  flex-direction: column-reverse;
   align-items: center;
-  background-color: rgb(225, 225, 225);
-  position: relative;
-  padding: 0 5%;
 }
 
-.title {
-  background-color: rgb(225, 225, 225);
-  padding: 20px;
-  writing-mode: horizontal-tb;
-  text-orientation: upright;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  gap: 1px;
-  position: sticky;
-  top: 10px;
-}
-
-.image {
-  display: flex;
-  align-items: center;
-  flex: 1;
-}
-
-.image img {
-  display: block;
-  width: 100%;
-  height: auto;
-  margin-left: 5%;
-}
-
-.body-container {
-  display: flex;
-  flex-direction: column;
-  margin: 0 5% 30px;
-}
-
-.zero, .one, .two, .three {
-  writing-mode: horizontal-tb;
-  width: 100%;
-  height: auto;
-  margin-top: 30px;
-  padding: 30px;
-  background-color: rgba(240, 239, 239, 0.104);
-  border-color: azure;
-}
-
-.two {
-  margin-top: 20px;
-}
-
-h1 {
-  font-family: "Hiragino Kaku Gothic ProN";
-  color: rgb(0, 0, 0);
-}
-
-h4 {
-  font-family: "Hiragino Kaku Gothic ProN";
-  color: rgb(0, 0, 0);
-}
-
-h6 {
-  display: block;
-  color: rgb(94, 94, 94);
-  font-size: 1em;
-  margin-top: 2.33em;
-  margin-bottom: 2.33em;
-  margin-left: 0;
-  margin-right: 0;
-  font-weight: lighter;
-}
-
-/* Media queries for responsiveness */
-@media screen and (min-width: 768px) {
-  .body-container {
-    display: flex;
+@media (min-width: 768px) {
+  .container {
+    flex-direction: row;
     justify-content: space-between;
-    margin-left: 0px;
-    margin-right: 200px;
-    height: 100vh;
-    overflow-y: auto;
   }
+}
 
-  .two {
-    margin-left: 20px;
-    margin-right: 20px;
+.responsive-image {
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+}
+
+.responsive-text {
+  font-size: 16px;
+}
+
+@media (min-width: 768px) {
+  .responsive-text {
+    font-size: 20px;
   }
 }
