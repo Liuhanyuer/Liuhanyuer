@@ -17,6 +17,25 @@ header {
   justify-content: center;
 }
 
+.header-left {
+  position: absolute;
+  left: 20px;
+}
+
+.header-left a {
+  font-family: 'EB Garamond', serif;
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+}
+
+#homeLink {
+  position: absolute;
+  left: 20px;
+  font-family: 'EB Garamond', serif;
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+}
+
 h1 {
   color: rgb(0, 0, 0);
   margin: 0;
