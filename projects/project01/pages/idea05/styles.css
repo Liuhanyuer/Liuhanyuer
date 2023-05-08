@@ -1,0 +1,80 @@
+body {
+    font-family: "Adobe Garamond", serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+.main-header {
+    position: fixed;
+    background-color: #ffffff;
+    width: 100%;
+    height: 4rem;
+    top: 0rem;
+    z-index: 900;
+}
+
+.left-header {
+    position: fixed;
+    top: 0rem;
+    left: 2rem;
+    z-index: 1000;
+}
+
+.right-header {
+    position: fixed;
+    top: 2rem;
+    right: 2rem;
+    z-index: 1000;
+}
+
+.right-header nav a {
+    color: #8e8e8e;
+    text-decoration: none;
+    margin-right: 1rem;
+    transition: color 0.1s;
+}
+
+.right-header nav a:hover {
+    color: rgb(182, 0, 0);
+}
+
+.image-frame {
+    position: relative;
+    padding-top: 4rem;
+    overflow: hidden;
+    width: 100%;
+    height: calc(100vw / 5);
+}
+
+.image-frame img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    transform: translateY(-35%); /* Adjust the percentage value to move the image up or down within the frame */
+}
+
+
+
+
+.image-caption {
+    font-style: italic;
+    text-align: left;
+    margin-top: 5px; /* Adjust this value to move the image caption up */
+    margin-left: 20px;
+    font-size: xx-small;
+    color: rgb(0, 0, 0);
+}
+
+h2 {
+        font-size: 64px;
+        margin-bottom: 0px;
+        max-width: 25%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+.wrapper {
+    width: 50%;
+    margin: 0 auto;
+}
