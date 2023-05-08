@@ -27,6 +27,7 @@ body {
     position: fixed;
     top: 1rem;
     left: 2rem;
+    z-index: 1000;
   }
   
   .left-header > p {
@@ -211,3 +212,6 @@ body {
     color: rgb(0, 0, 0);
 }
 
+.image-frame:hover {
+    opacity: 0.8;
+  }
