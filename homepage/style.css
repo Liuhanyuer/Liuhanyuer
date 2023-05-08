@@ -49,7 +49,7 @@ body {
   }
   
   .right-header nav a:hover {
-    color: #9d9d9d;
+    color: #850000;
   }
 
   /* Add this CSS rule to make the font size of the left and right headers responsive */
@@ -182,4 +182,32 @@ body {
   .rectangle-selected {
     background-color: black;
   }
+
+  .image-frame-container {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transform: translateY(35rem);
+}
+
+  
+.image-frame {
+    width: 100vw;
+    max-height: 500px; /* Adjust this value as needed to control the maximum height of the image */
+    object-fit: cover;
+}
+
+  
+  .image-caption {
+    margin-top: 5px;
+    margin-left: 20px;
+    font-size: 2rem;
+    color: rgb(0, 0, 0);
+}
 
