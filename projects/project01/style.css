@@ -1,0 +1,275 @@
+body {
+    font-family: "Adobe Garamond", serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .container {
+    display: flex;
+    height: 100vh;
+  }
+  
+  .left {
+    background-color: #ffffff;
+    flex: 1;
+    padding: 2rem;
+    position: relative;
+  }
+  
+  .right {
+    background-color: #ffffff;
+    flex: 1;
+    padding: 2rem;
+    position: relative;
+  }
+  
+  .left-header {
+    position: fixed;
+    top: 1rem;
+    left: 2rem;
+    z-index: 100;
+    
+  }
+  
+  .left-header > p {
+    line-height: 0.5; /* Adjust this value for line spacing */
+    margin-bottom: 0;
+  }
+  
+  .right-header {
+    position: fixed;
+    top: 2rem;
+    right: 2rem;
+    z-index: 1000; /* Add this line */
+    
+  }
+  
+  .right-header nav a {
+    color: #8e8e8e;
+    text-decoration: none;
+    margin-right: 1rem;
+    transition: color 0.1s;
+  }
+  
+  .right-header nav a:hover {
+    color:  rgb(182, 0, 0);
+  }
+
+
+
+
+  .jpg {
+    position: absolute;
+    object-fit: cover;
+    transition: all 10s;
+    background-color: #ffffff;
+    border: 1px solid #a1a1a1;
+    filter: none;
+  }
+  
+  .jpg-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(-90deg);
+  text-align: start;
+  font-size: 3rem;
+  color: #333;
+  
+}
+
+.jpg-text:hover {
+  color:  rgb(182, 0, 0);
+}
+
+  
+  
+  
+  .jpg-rotate-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .jpg-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 56.25vw;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%) rotate(90deg);
+    aspect-ratio: 16/9;
+    z-index: 10;
+  }
+  
+  
+  
+  .jpg-container .jpg {
+    width: 60vmin;
+    height: calc(60vmin * 16/9);
+    position: absolute;
+  }
+  
+  
+  .jpg-container .jpg:nth-child(1) {
+    z-index: 6;
+  }
+  
+  .jpg-container .jpg:nth-child(2) {
+    z-index: 5;
+    transform: scale(0.9) translateY(-18%);
+  }
+  
+  .jpg-container .jpg:nth-child(3) {
+    z-index: 4;
+    transform: scale(0.81) translateY(-36%);
+  }
+  
+  .jpg-container .jpg:nth-child(4) {
+    z-index: 3;
+    transform: scale(0.729) translateY(-54%);
+  }
+  
+  .jpg-container .jpg:nth-child(5) {
+    z-index: 2;
+    transform: scale(0.6561) translateY(-72%);
+  }
+  
+  .jpg-container .jpg:nth-child(6) {
+    z-index: 1;
+    transform: scale(0.59049) translateY(-90%);
+  }
+  
+  
+  
+  .title-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: absolute;
+    left: 60%;
+    top: 50%;
+    transform: translateY(-50%) translateX(180%);
+    z-index: 999;
+  }
+  
+  .title {
+    font-size: 1.6rem;
+    color: #bababa;
+    text-decoration: none;
+    margin-bottom: 1rem;
+    cursor: pointer;
+    transition: color 0.1s;
+    white-space: nowrap;
+  }
+  
+  .title:hover {
+    color:  rgb(182, 0, 0);
+  }
+  
+  .title-number {
+    font-size: 0.8rem;
+    display: inline;
+    margin-right: 0.3rem;
+  }
+  
+  .rectangle {
+    position: absolute;
+    width: 30%;
+    min-height: 1px;
+    background-color: transparent;
+    z-index: 998;
+    transform: translateY(-0.5rem) translateX(-90%);
+  }
+  
+  .rectangle-selected {
+    background-color: rgb(182, 0, 0);
+  }
+
+  .irregular-frames-container {
+    column-count: 3;
+    column-gap: 20px; /* Increase this value to add spacing between columns */
+    margin-top: 0vh;
+    max-width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .frame {
+    background-color: #a1a1a1;
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 20px; /* Increase this value to add spacing between rows */
+    break-inside: avoid;
+    width: 100%;
+  }
+  
+  .frame-text {
+    text-align: left;
+    color: #333; /* Change the text color as needed */
+    padding: 1rem; /* Add some padding around the text */
+    font-size: 100%;
+}
+
+.frame-text > p {
+  line-height: 0.5; /* Adjust this value for line spacing */
+  margin-bottom: 0;
+}
+  
+  .frame::before {
+    content: '';
+    display: block;
+  }
+  
+  .frame:nth-child(1) {
+    height: 200px;
+    background-color: #a1a1a1; /* Change the color for the 1st frame */
+    background-size: cover; /* Make the image cover the entire frame */
+    background-position: center; /* Center the image */
+  }
+  
+  .frame:nth-child(2) {
+    height: 300px;
+    background-color: #ffffff;
+  }
+  
+  .frame:nth-child(3) {
+    height: 250px;
+  }
+  
+  .frame:nth-child(4) {
+    height: 350px;
+  }
+  
+  .frame:nth-child(5) {
+    height: 550px;
+  }
+  
+  .frame:nth-child(6) {
+    height: 400px;
+  }
+  
+  .frame:nth-child(7) {
+    height: 280px;
+  }
+  
+  .frame:nth-child(8) {
+    height: 220px;
+  }
+  
+  .frame:nth-child(9) {
+    height: 380px;
+  }
+  
+  .frame:nth-child(10) {
+    height: 320px;
+  }
+  
