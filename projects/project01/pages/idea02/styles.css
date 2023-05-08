@@ -21,6 +21,11 @@ body {
     z-index: 1000;
 }
 
+.left-header a {
+    text-decoration: none;
+    color: inherit;
+}
+
 .right-header {
     position: fixed;
     top: 2rem;
@@ -51,28 +56,25 @@ body {
     width: 100%;
     height: auto;
     object-fit: cover;
-    transform: translateY(-35%); /* Adjust the percentage value to move the image up or down within the frame */
+    transform: translateY(-35%);
 }
-
-
-
 
 .image-caption {
     font-style: italic;
     text-align: left;
-    margin-top: 5px; /* Adjust this value to move the image caption up */
+    margin-top: 5px;
     margin-left: 20px;
     font-size: xx-small;
     color: rgb(0, 0, 0);
 }
 
 h2 {
-        font-size: 64px;
-        margin-bottom: 0px;
-        max-width: 25%;
-        margin-left: auto;
-        margin-right: auto;
-    }
+    font-size: 64px;
+    margin-bottom: 0px;
+    max-width: 25%;
+    margin-left: auto;
+    margin-right: auto;
+}
 
 .wrapper {
     width: 50%;
