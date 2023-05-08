@@ -295,3 +295,15 @@ body {
     background-color: #ffffff;
   }
   
+  .image-link {
+    display: block;
+    overflow: hidden;
+  }
+  
+  .image-link img {
+    transition: opacity 0.3s ease;
+  }
+  
+  .image-link:hover img {
+    opacity: 0.5;
+  }
